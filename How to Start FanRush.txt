@@ -1,0 +1,114 @@
+```text
+DONATE PROJECT SETUP
+
+========================
+Server PowerShell Commands
+========================
+
+npm install
+
+cd backend
+
+copy .env.example .env
+
+npm install -g @stripe/cli
+
+
+========================
+Stripe Setup
+========================
+
+stripe login
+
+
+Start Stripe webhook listener:
+
+stripe listen --forward-to localhost:PORT/webhook
+
+
+If it displays a webhook secret key:
+
+whsec_xxxxxxxxxxxxx
+
+
+Copy it into the .env file:
+
+STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxx
+
+
+========================
+Running the Project
+========================
+
+1. Start Backend:
+
+cd backend
+
+npm run dev
+
+
+Backend URL:
+
+http://localhost:PORT
+
+
+------------------------
+
+
+2. Start Stripe webhook listener:
+
+stripe listen --forward-to localhost:PORT/webhook
+
+
+------------------------
+
+
+3. Start Angular Frontend:
+
+cd frontend
+
+npm install
+
+ng serve
+
+
+Frontend URL:
+
+http://localhost:PORT
+
+
+========================
+Environment Variables (.env)
+========================
+
+FRONTEND_URL=http://localhost:PORT
+
+BACKEND_URL=http://localhost:PORT
+
+STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxx
+
+
+========================
+System Flow
+========================
+
+Angular Frontend
+        |
+        |
+        v
+Backend API
+localhost:PORT
+        |
+        |
+        v
+Stripe Payment
+        |
+        |
+        v
+Webhook
+localhost:PORT/webhook
+        |
+        |
+        v
+Automatic Invoice Generation
+```

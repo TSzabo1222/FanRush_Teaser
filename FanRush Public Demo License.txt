@@ -1,0 +1,24 @@
+FanRush Public Demo License
+
+Copyright (c) 2026 FanRush
+
+All rights reserved.
+
+This repository contains the public demo version of FanRush.
+The source code is provided for viewing, learning, and evaluation purposes only.
+
+Permission is granted to view and study the source code.
+
+You may not:
+- use this project or any part of it for commercial purposes;
+- copy, modify, redistribute, or publish this project or derivative works;
+- use the code, design, branding, or concept as part of another product or service;
+- remove copyright or ownership notices.
+
+The full FanRush platform may contain additional private features,
+integrations, and proprietary components that are not included in this repository.
+
+This software is provided "as is", without warranty of any kind.
+The author is not responsible for any damages or issues caused by the use of this software.
+
+For permission requests or commercial inquiries, please contact the copyright owner.
