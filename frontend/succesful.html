@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FanRush - Thank you</title>
+
+    <link rel="stylesheet" href="succesful.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+    <div class="wrap">
+
+
+
+        <div class="logo">
+            FanRush<span>.</span>
+        </div>
+
+
+
+        <div class="receipt">
+
+
+
+            <div id="state-loading" class="state active">
+
+                <div class="spinner"></div>
+
+                <p>
+                    Processing payment...
+                </p>
+
+            </div>
+
+
+
+
+
+            <div id="state-success" class="state">
+
+
+                <div class="check-circle">
+                    ✓
+                </div>
+
+
+                <h1>
+                    Thank you for your support!
+                </h1>
+
+
+
+                <div class="r-line">
+                    <span>Amount</span>
+                    <span id="s-amount">—</span>
+                </div>
+
+
+                <div class="r-line">
+                    <span>Supporter</span>
+                    <span id="s-name">—</span>
+                </div>
+
+
+                <div class="r-line">
+                    <span>Supporting</span>
+                    <span id="s-streamer">—</span>
+                </div>
+
+
+
+
+
+                <div class="invoice-note" id="invoice-ready">
+
+
+                    <div class="note-icon ok">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <b>Invoice issued</b>
+
+                        <br>
+
+                        Sent to:
+                        <span id="s-email">—</span>
+
+                        <br>
+
+                        Invoice ID:
+                        <span id="s-invoice-num">—</span>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="invoice-note" id="invoice-pending" style="display:none;">
+
+
+                    <div class="note-icon pending">
+                        •
+                    </div>
+
+
+                    <div>
+
+                        Invoice generation is not connected yet —
+                        the payment itself was successful.
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="invoice-note" id="invoice-error" style="display:none;">
+
+
+                    <div class="note-icon pending">
+                        !
+                    </div>
+
+
+                    <div>
+
+                        <b>The payment was successful</b>,
+                        but invoice generation failed.
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            <div id="state-error" class="state">
+
+
+                <div class="check-circle">
+                    !
+                </div>
+
+
+                <h1>
+                    We cannot find this transaction
+                </h1>
+
+
+                <p>
+
+                    If you have just completed a payment,
+                    try refreshing the page again in a few seconds.
+
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <a href="main.html" class="back-link">
+            ← Back to support page
+        </a>
+
+
+
+    </div>
+
+
+<script src="./backend/succesful.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FanRush</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="main.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <div class="wrap">
+
+
+        <header>
+
+            <div class="header-row">
+
+                <div class="logo">
+                    FanRush<span>.</span>
+                </div>
+
+
+                <nav>
+
+                    <span class="nav-links">
+
+                        <a href="#why">
+                            Why FanRush
+                        </a>
+
+                        <a href="#">
+                            Login
+                        </a>
+
+                    </span>
+
+
+                    <div class="badge-live">
+                        <span class="dot"></span>
+                        live stream
+                    </div>
+
+
+                </nav>
+
+
+            </div>
+
+        </header>
+
+
+
+
+        <section class="hero">
+
+
+            <div class="hero-left">
+
+
+                <div class="streamer-card">
+
+                    <div class="avatar">
+                        N
+                    </div>
+
+
+                    <div class="streamer-name">
+                        Supporting
+                        <b>Streamer Name</b>
+                    </div>
+
+
+                </div>
+
+
+
+                <h1>
+                    The <em>new generation</em> of support for streamers.
+                </h1>
+
+
+
+                <p class="hero-sub">
+
+                    FanRush is a modern support platform that connects content creators and their communities.
+                    Supports appear instantly on the stream, while the system simplifies the entire process from support
+                    to administration.
+
+                </p>
+
+
+
+                <div class="goal-block">
+
+
+                    <div class="goal-label">
+
+                        <span>
+                            Community goal — new equipment
+                        </span>
+
+                        <span>
+                            12,000 / 20,000 HUF
+                        </span>
+
+                    </div>
+
+
+                    <div class="goal-bar">
+
+                        <div class="goal-fill"></div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="receipt-wrap">
+
+
+                <div class="receipt">
+
+
+
+                    <div class="r-top">
+
+                        <div class="r-brand">
+                            FANRUSH SUPPORT
+                        </div>
+
+
+                        <div class="r-id" id="r-id">
+                            #TX-2026-000000
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Support amount
+                        </label>
+
+
+                        <div class="amount-grid">
+
+                            <button class="amount-btn" data-amt="1000">
+                                1,000
+                            </button>
+
+                            <button class="amount-btn active" data-amt="2500">
+                                2,500
+                            </button>
+
+                            <button class="amount-btn" data-amt="5000">
+                                5,000
+                            </button>
+
+                            <button class="amount-btn" data-amt="10000">
+                                10,000
+                            </button>
+
+
+                        </div>
+
+                        <br>
+                        <input class="amount-custom" id="custom-amt" type="number" placeholder="custom amount (HUF)">
+
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>
+                            Message for the content creator
+                        </label>
+
+
+                        <textarea rows="2" id="msg-input" placeholder="Good luck with your next stream! 🚀"></textarea>
+
+
+                    </div>
+
+
+
+
+                    <div class="field">
+
+
+                        <div class="row-2">
+
+
+                            <div>
+
+                                <label>
+                                    Display name (optional)
+                                </label>
+
+
+                                <input class="text-input" id="name-input" type="text" placeholder="your name">
+
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label>
+                                    Email address (for notification)
+                                </label>
+
+
+                                <input class="text-input" id="email-input" type="email"
+                                    placeholder="youremail@example.com">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <label class="invoice-toggle">
+
+                        <input type="checkbox" id="company-toggle">
+
+                        I would like to provide company support details
+
+                    </label>
+
+
+                    <button class="submit-btn" id="submit-btn">
+
+                        Send Support ^0^ - 2,500 HUF
+
+                    </button>
+
+
+                    <div class="r-preview" id="r-preview">
+
+
+
+                        <div class="line">
+
+                            <span>
+                                Supporter
+                            </span>
+
+                            <b id="prev-name">
+                                —
+                            </b>
+
+
+                        </div>
+
+
+
+
+                        <div class="line">
+
+                            <span>
+                                Support
+                            </span>
+
+                            <b id="prev-amt">
+                                2,500 HUF
+                            </b>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="line">
+
+                            <span>
+                                Confirmation
+                            </span>
+
+                            <b>
+                                digital receipt
+                            </b>
+
+
+                        </div>
+
+
+                        <div class="r-stamp" id="r-stamp">
+
+                            <span class="r-stamp-icon">
+                                ✓
+                            </span>
+
+                            Support successfully recorded
+
+                            <span class="cursor-blink"></span>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <section class="why" id="why">
+
+
+            <div class="why-head">
+
+
+                <h2>
+                    More than just a donate button.
+                </h2>
+
+
+                <p>
+                    FanRush is a complete support experience that helps streamers build communities while making support
+                    management easier.
+                </p>
+
+
+            </div>
+
+
+
+            <div class="why-grid">
+
+
+
+                <div class="why-item">
+
+
+                    <div class="why-eyebrow">
+                        AUTOMATED SYSTEM
+                    </div>
+
+
+                    <h3>
+                        Simple support management
+                    </h3>
+
+
+                    <p>
+                        Supports can be managed transparently and quickly, allowing content creators to spend more time
+                        with their communities.
+                    </p>
+
+
+                </div>
+
+
+                <div class="why-item">
+
+
+                    <div class="why-eyebrow">
+                        LIVE INTERACTION
+                    </div>
+
+
+                    <h3>
+                        The community reacts instantly
+                    </h3>
+
+
+                    <p>
+                        Supports and messages can appear in real time during the stream, improving the viewer
+                        experience.
+                    </p>
+
+
+                </div>
+
+
+                <div class="why-item">
+
+
+                    <div class="why-eyebrow">
+                        MODERN PAYMENTS
+                    </div>
+
+
+                    <h3>
+                        Fast and convenient support
+                    </h3>
+
+
+                    <p>
+                        Viewers can support their favorite content creators with simple, modern payment options.
+                    </p>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+        <footer>
+
+
+            <div>
+                © 2026 FanRush
+            </div>
+
+
+            <div>
+                FanRush is a platform concept under development for the future of streamer support.
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+<script src="./backend/main.js"></script>
+
+
+</body>
+
+</html>
